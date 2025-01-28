@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  </head>
+  <body>
+    <div class="weather-container">
+      <!-- Search Input Field -->
+      <div class="search-container">
+        <input type="text" id="city-input" placeholder="Search for a city..." />
+        <button id="search-btn" onclick="displayWeather()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <!-- Left Section -->
+      <div class="weather-info">
+        <div class="weather-icon">
+          <i class="fa-solid fa-smog fa-flip" style="color: #99bbf5"></i>
+        </div>
+        <div class="location-info">
+          <h2>Fog</h2>
+          <p id="city-name">Khulna City</p>
+        </div>
+        <div class="temperature">
+          <h1 id="temp">28°C</h1>
+          <p id="location">📍 Change Location</p>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="weather-details">
+        <div class="detail">
+          <p>Humidity</p>
+          <h3 id="humidity">50%</h3>
+        </div>
+        <div class="detail">
+          <p>Air Pressure</p>
+          <h3 id="pressure">1009.483 PS</h3>
+        </div>
+        <div class="detail">
+          <p>Feels like</p>
+          <h3 id="feel">0%</h3>
+        </div>
+        <div class="detail">
+          <p>Wind Speed</p>
+          <h3 id="wind-speed">1.4 km/h</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
